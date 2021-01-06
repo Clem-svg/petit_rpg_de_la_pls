@@ -4,6 +4,12 @@ class Assassin extends Character {
       this.name = name;
   }
 
-  attackShadowHit() {
+  attackShadowHit(victim) {
+    if (this.mana >= 20){
+      this.dealDamage(victim, 7);
+        if (victim.status != "Looser"){
+          this.hp -= 7;
+        }
+    }
   }
 }
