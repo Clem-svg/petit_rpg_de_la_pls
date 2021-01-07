@@ -1,5 +1,6 @@
 class Character {
-  constructor(hp, dmg, mana, status = 'playing') {
+  constructor(name, hp, dmg, mana, status = 'playing') {
+      this.name = name
       this.hp = hp;
       this.dmg = dmg;
       this.mana = mana;
@@ -27,7 +28,6 @@ class Character {
       attacker.mana += 20;
       console.log(`OH NOOOOOON ${this.name} est moooooooooooooooooort.e !`);
       console.log(`La cruauté de ${attacker.name} est recompensée de 20pts de mana`);
-
     }
   }
 }

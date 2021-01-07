@@ -1,7 +1,6 @@
 class Paladin extends Character {
-  constructor(hp = 16, dmg = 3, mana = 160, status, name) {
-      super(hp, dmg, mana, name, status);
-      this.name = name;
+  constructor(name = "Ulder", hp = 16, dmg = 3, mana = 160, status) {
+    super(name, hp, dmg, mana, status);
   }
 
   attackHealingLighting(victim) {
