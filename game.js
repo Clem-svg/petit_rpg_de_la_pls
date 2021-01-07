@@ -1,7 +1,6 @@
 class Game {
-  constructor() {
-      super(turnLeft = 10);
-      this.turnLeft = this.turnLeft;
+  constructor(turnLeft = 10) {
+      this.turnLeft = turnLeft;
   }
 
   newTurn() {
@@ -13,3 +12,8 @@ class Game {
     }
   }
 }
+
+console.log('*****************************************')
+console.log('****** Bienvenue sur notre jeu **********')
+console.log('****** Seul le plus fort survivra  ******')
+console.log('*****************************************')
